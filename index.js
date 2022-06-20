@@ -24,13 +24,17 @@ function renderLetters(word) {
     });
     }
     renderLetters(word)
-     
+
+    let userEror = 0;
+
     function chekLatter(letter) {
     const nodes = [...document.getElementsByClassName("letter")];
     console.log(nodes);
     nodes.forEach((item) => {
     if (letter === item.textContent) {
     item.classList.add("black-letter");
+    }else{ userEror +=1
+        console.log(userEror)
     }
     });
     }
@@ -45,3 +49,18 @@ function renderLetters(word) {
         };
      }
      getLetter()
+
+    
+    
+    
+     const arrImg = ['./img/2.png', './img/3.png', './img/4.png']
+
+    
+    
+    
+    function changePicture(){
+        let img = document.getElementsByClassName('img')
+        img.src = arrImg[userEror];
+}
+
+     changePicture()
