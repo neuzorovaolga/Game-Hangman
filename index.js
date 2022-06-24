@@ -25,20 +25,36 @@ function renderLetters(word) {
     }
     renderLetters(word)
 
-    let userEror = 0;
+
 
     function chekLatter(letter) {
     const nodes = [...document.getElementsByClassName("letter")];
+    let userEror = true;
     console.log(nodes);
     nodes.forEach((item) => {
     if (letter === item.textContent) {
     item.classList.add("black-letter");
-    }else{ userEror +=1
-        console.log(userEror)
+    userEror = false;
     }
-    });
+    })
+    if(userEror=== true){
+        let numb = counter()
+        changePicture(numb)
+        console.log(numb)
     }
     
+    };
+    
+    function makeCounter() {
+        let count = 0;
+        return function() {
+          return count++; 
+        };
+
+      }
+      let counter = makeCounter()
+
+
 
     function getLetter() {
         const butt = document.getElementsByTagName("button")[0];
@@ -51,16 +67,9 @@ function renderLetters(word) {
      getLetter()
 
     
-    
-    
-     const arrImg = ['./img/2.png', './img/3.png', './img/4.png']
 
-    
-    
-    
-    function changePicture(){
-        let img = document.getElementsByClassName('img')
-        img.src = arrImg[userEror];
-}
-
-     changePicture()
+    function changePicture(numb){
+        const arrImg = ['./img/2.png', './img/3.png', './img/4.png']
+        let img = document.getElementsByClassName('img')[0];
+        img.src = arrImg[numb];
+} 
