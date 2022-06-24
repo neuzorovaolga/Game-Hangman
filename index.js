@@ -32,19 +32,44 @@ function renderLetters(word) {
     let userEror = true;
     console.log(nodes);
     nodes.forEach((item) => {
-    if (letter === item.textContent) {
-    item.classList.add("black-letter");
-    userEror = false;
-    }
+        if (letter === item.textContent) {
+            item.classList.add("black-letter");
+            userEror = false;
+        }
     })
-    if(userEror=== true){
+    if(userEror){
         let numb = counter()
         changePicture(numb)
+        theEnd(numb);
         console.log(numb)
     }
+    theWind(nodes);
     
     };
-    
+
+    function theEnd(numb) {
+        if(numb === 2) {
+           setTimeout(() => {
+            let massage = confirm('Вы проиграли! Хотите начать заново?');
+            if(massage === false) {
+                const input = document.getElementsByTagName('input')[0];
+                console.log(input);
+                input.disabled = true;
+                const button = document.querySelector('button');
+                button.disabled = true;
+            }
+
+           },200)
+            
+        }
+    }
+
+    // function theWind(nodes) {
+    //     console.log(nodes)
+    //     const havingClass = nodes.every (item => item.classList.contains("black-letter"));
+    //     console.log(havingClass);
+    // }
+    // theWind();
     function makeCounter() {
         let count = 0;
         return function() {
