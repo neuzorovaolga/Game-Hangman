@@ -1,73 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(217, 170, 170);
+body {
+  background-color: rgb(217, 170, 170);
 }
-.wrapper{
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    
-
+.wrapper {
+  width: 50%;
+  margin: 15vh auto;
+  padding: 20px;
+  border: 1px solid purple;
 }
 
 .img {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .word-wrap {
-    width: 100%;
-    height: 50px;
-    border: 1px solid red;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 400px;
+  height: 50px;
+  border: 1px solid purple;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-    width: 20%;
-    height: 100px;
-    font-family: serif;
-    font-size: 44px;
-    font-weight: 600;
-    text-align: center;
-    margin-right: 20px;
+  width: 20%;
+  height: 50px;
+  font-family: serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 20px;
 }
 
 button {
-    width: 20%;
-    height: 100px;
-    font-family: serif;
-    font-size: 44px;
-    font-weight: 600;
-    text-align: center;
+  width: 20%;
+  height: 50px;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
-.letter{
-    color:rgb(217, 170, 170);
-    height: 20px;
-    border-bottom: 1px solid black;
-    margin: 0 5px;
-    width: 20px;
-    font: 24px;
-    text-align: center;
+.letter {
+  color: rgb(217, 170, 170);
+  height: 20px;
+  border-bottom: 1px solid black;
+  margin: 0 5px;
+  width: 20px;
+  font: 24px;
+  text-align: center;
 }
 
-.black-letter{
-    color:black;
+.black-letter {
+  color: black;
 }
