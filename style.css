@@ -33,10 +33,11 @@ body {
 }
 
 .form {
-  width: 100%;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 input {
