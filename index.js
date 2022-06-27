@@ -110,11 +110,11 @@ let counter = makeCounter();
 function getLetter() {
   const butt = document.getElementsByTagName("button")[0];
   butt.onclick = function () {
-    let input = document.getElementsByTagName("input")[0];
+    const input = document.getElementsByTagName("input")[0];
     let val = input.value;
     console.log(val);
     chekLatter(val);
-    input.value = " ";
+    input.value = "";
   };
 }
 getLetter();
