@@ -115,6 +115,7 @@ function getLetter() {
     console.log(val);
     chekLatter(val);
     input.value = "";
+    input.focus()
   };
 }
 getLetter();
