@@ -109,16 +109,18 @@ let counter = makeCounter();
 
 function getLetter() {
   const butt = document.getElementsByTagName("button")[0];
-  butt.onclick = function () {
+  butt.addEventListener('click', getUserLetter); 
+}
+getLetter();
+
+function getUserLetter () {
     const input = document.getElementsByTagName("input")[0];
     let val = input.value;
     console.log(val);
     chekLatter(val);
     input.value = "";
     input.focus()
-  };
 }
-getLetter();
 
 function changePicture(numb) {
   const arrImg = ["./img/2.png", "./img/3.png", "./img/4.png"];
